@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;1,200;1,300&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        :root {
+            --gris: #D9D9D9;
+            --marron: #8C6C69;
+            --marronclaro: #BF9E9B; 
+            --carne: #D9BBB8;
+            --PlayfairDisplay: 'PlayfairDisplay', serif;
+            --Karla: 'Quattrocento Sans', sans-serif;
+        }
+        /*HEADER*/
+        body>header{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            height: 100vh;
+            background-color: var(--marronclaro);
+        }
+        h1{
+            font-family: 'PlayfairDisplay', serif;
+            font-weight: 500;
+            font-size: 5.5em;
+            color: var(--marron);
+        }
+        h2{
+            font-family: var(--PlayfairDisplay);
+            font-weight: 300;
+            font-size: 1.5em;
+            color: var(--marron);
+        }
+        
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        nav p{
+            text-align: right;
+            padding-right: 4em;
+            font-family:'Quattrocento Sans', sans-serif;
+            font-weight: 200;
+            font-size: 1em;
+            color: var(--marron);
+            width: 30%;
+            margin-top: 20em;
+        }
+        h3{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+            font-size: 3em;
+        }
+        header p{
+            font-family: var(--Karla);
+            color: var(--gris);
+            font-size: 1em;
+        }
+        /*MAIN*/
+        .container_trabajos{
+            background-color: var(--carne);
+            display: flex;
+            flex-direction: column;
+        }
+        /*trabajo1*/
+        .trabajo1{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo1 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .llocweb_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo2*/
+        .trabajo2{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo2 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .llocweb2_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo3*/
+        .trabajo3{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo3 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .videoyaudio_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo4*/
+        .trabajo4{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo4 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .galery_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo5*/
+        .trabajo5{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo5 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .grid_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo6*/
+        .trabajo6{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo6 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .neoplasticismo_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo7*/
+        .trabajo7{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo7 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            padding-right: 18em;
+        }
+        .portfolio_img{
+            width: 50%;
+            display: flex;
+        }
+        .blockquote{
+            font-family: var(--marron);
+            color: var(--marronclaro);
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 60%;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        /*FOOTER*/
+        footer{
+            height: 25vh;
+            padding: 1em;
+            background-color: var(--gris);
+        }
+        footer h3{
+            font-weight: 100;
+            text-align: left;
+            font-size: 1.5em;
+            font-family: var(--Karla);
+            color: white;
+        }
+        footer div{
+            display: flex;
+            justify-content: flex-start;
+            text-align: right;
+            justify-content: space-between;
+        }
+        p a{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+            
+        }
+        /*TAMAÑO TABLET*/
+        @media (max-width:1024px){
+            html{
+                font-size: 10px;
+            }
+        /*HEADER*/
+        body>header{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            height: 100vh;
+            background-color: var(--marronclaro);
+        }
+        h1{
+            font-family: 'PlayfairDisplay', serif;
+            font-weight: 500;
+            font-size: 7em;
+            color: var(--marron);
+        }
+        h2{
+            font-family: var(--Karla);
+            font-weight: 300;
+            font-size: 1.5em;
+            color: var(--gris);
+        }
+        
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        nav p{
+            text-align: right;
+            padding-right: 4em;
+            font-family:'Quattrocento Sans', sans-serif;
+            font-weight: 200;
+            font-size: 10em;
+            color: var(--marron);
+            width: 40%;
+            margin-top: 20em;
+        }
+        h3{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+            font-size: 2.5em;
+        }
+        header p{
+            font-family: var(--Karla);
+            color: var(--gris);
+            font-size: 1.5em;
+        }
+        
+        /*FOOTER*/
+        footer{
+            height: 25vh;
+            padding: 2em;
+            background-color: var(--gris);
+        }
+        footer h3{
+            font-weight: 100;
+            text-align: left;
+            font-size: 2.5em;
+            font-family: var(--Karla);
+            color: white;
+        }
+        footer div{
+            display: flex;
+            justify-content: flex-start;
+            text-align: right;
+            justify-content: space-between;
+        }
+        p a{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+            
+        }
+        }
+        /*TAMAÑO MOVIL*/
+        @media (max-width:600px){
+            html{
+                font-size: 10px;
+            }
+        /*HEADER*/
+        body>header{
+            padding: 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            height: 100vh;
+            background-color: var(--marronclaro);
+        }
+        h1{
+            font-family: 'PlayfairDisplay', serif;
+            font-weight: 500;
+            font-size: 5em;
+            color: var(--marron);
+        }
+        h2{
+            font-family: var(--Karla);
+            font-weight: 300;
+            font-size: 1.5em;
+            color: var(--gris);
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        nav p{
+            text-align: right;
+            padding-right: 4em;
+            font-family:'Quattrocento Sans', sans-serif;
+            font-weight: 200;
+            font-size: 10em;
+            color: var(--marron);
+            width: 60%;
+            margin-top: 20em;
+        }
+        h3{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+            font-size: 1.5em;
+        }
+        header p{
+            font-family: var(--Karla);
+            color: var(--gris);
+            font-size: 0.9em;
+        }
+        /*MAIN*/
+        .container_trabajos{
+            background-color: var(--carne);
+            display: flex;
+            flex-direction: column;
+        }
+        /*trabajo1*/
+        .trabajo1{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+            
+        }
+        .trabajo1 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding-right: 18em;
+        }
+        .llocweb_img{
+            width: 100%;
+            display: flex;
+        }
+        /*trabajo2*/
+        .trabajo2{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo2 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .llocweb2_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo3*/
+        .trabajo3{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo3 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .videoyaudio_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo4*/
+        .trabajo4{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo4 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .galery_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo5*/
+        .trabajo5{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo5 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .grid_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo6*/
+        .trabajo6{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo6 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .neoplasticismo_img{
+            width: 50%;
+            display: flex;
+        }
+        /*trabajo7*/
+        .trabajo7{
+            display: flex;
+            flex: wrap;
+            flex-direction: row-reverse;
+        }
+        .trabajo7 header{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            padding-right: 18em;
+        }
+        .portfolio_img{
+            width: 50%;
+            display: flex;
+        }
+        .blockquote{
+            font-family: var(--marron);
+            color: var(--marronclaro);
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 60%;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        /*FOOTER*/
+        footer{
+            height: 25vh;
+            padding: 1em;
+            background-color: var(--gris);
+        }
+        footer h3{
+            font-weight: 100;
+            text-align: left;
+            font-size: 1.5em;
+            font-family: var(--Karla);
+            color: white;
+        }
+        footer div{
+            display: flex;
+            justify-content: flex-start;
+            text-align: right;
+            justify-content: space-between;
+        }
+        p a{
+            font-family: var(--PlayfairDisplay);
+            color: var(--marron);
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <hgroup>
+                <h1>Porfolio Digital</h1>
+                <h2>Ana  Merino Campos/2º Diseño Gráfico</h2>
+            </hgroup>
+            <nav>
+                <p>Soy Ana Merino estudiante de segundo de diseño gráfico. Anteriormente estudio el ciclo medio de preimpresión digital y el ciclo superior de Gráfica publicitaria.
+                    A continuación os muestro algunos de los trabajos realizados durante el curso.</p>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="trabajos">
+            <div class="container_trabajos">
+            <div class="trabajo1">
+                <div class="llocweb_img">
+                <a href="https://anamerinocampos.github.io/1_llocweb_2dg/"><img src="/img/llocweb.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>SitioWeb</h3>
+                    <p>En este trabajo hemos aprendido las partes basicas para poder realizar un proyecto en html.</p>
+                </blockquote>
+            </header>    
+            </div>
+            <div class="trabajo2">
+                <div class="llocweb2_img">
+                <a href="https://anamerinocampos.github.io/2_llocweb_2dg/"><img src="/img/llocweb2.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>SitioWeb2</h3>
+                    <p>En este trabajo hemos completado el anterior trabajo añadiendo enlaces.</p>
+                </blockquote>
+            </header>    
+            </div>
+            <div class="trabajo3">
+                <div class="videoyaudio_img">
+                    <a href="https://anamerinocampos.github.io/3_img_video_audio_css_2dg/"><img src="/img/video_y_audio.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>Imagen y Video</h3>
+                    <p>Hemos aprendido en este trabajo a añadir enlaces, imagenes y videos.</p>
+                </blockquote>
+            </header>    
+            </div>
+            <div class="trabajo4">
+                <div class="galery_img">
+                    <a href="https://anamerinocampos.github.io/4_galery_2DG/"><img src="/img/galery.png" alt=""></a>  
+                </div>
+            <header>
+                <blockquote>
+                    <h3>Galeria</h3>
+                    <p>En este trabajo hemos aprendido a utilizar el grid junto con el css completando lo añadido anteriormente.</p>
+                </blockquote>
+            </header>    
+            </div>
+            <div class="trabajo5">
+                <div class="grid_img">
+                    <a href="https://anamerinocampos.github.io/5_grid_2DG/"><img src="/img/grid.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>Grid</h3>
+                    <p>En este trabajo hemos aprendido a utilizar el grid template y a cambiar el tamaño de nuestros elemntos segundo lo grande que sea la pantalla en la que vayamos a visualizar.</p>
+                </blockquote>
+            </header>    
+            </div>
+            
+            <div class="trabajo6">
+                <div class="neoplasticismo_img">
+                    <a href="https://anamerinocampos.github.io/6_neoplasticismo_2dg/"><img src="/img/neoplasticismo.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>Neoplasticismo</h3>
+                    <p>Con este ejercicio hemos aprendido a trabajar la función de gri-template en css para organizar el contenido en una reticula.</p>
+                </blockquote>
+            </div>
+            <div class="trabajo7">
+                <div class="portfolio_img">
+                    <a href="http://127.0.0.1:5500/sitioweb/index.html">    <img src="/img/portfolio.png" alt=""></a>
+                </div>
+            <header>
+                <blockquote>
+                    <h3>Portfolio</h3>
+                    <p>En este trabajo mostramos todo lo que hemos aprendido en el curso y los trabajos realizados.</p>
+                </blockquote>
+            </div>
+        </div>
+        </section>            
+    </main>
+    <footer>
+        <h3>Redes Sociales</h3>
+        <div id="rrss">
+            <p><a href="https://www.instagram.com/byanamerino/">Instagram</a></p>
+            <p><a href="https://github.com/AnaMerinoCampos">Github</a></p>
+            <p><a href="#">E-mail</a></p>
+        </div>
+    </footer>
+</body>
+</html>
